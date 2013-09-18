@@ -1,0 +1,9 @@
+
+<ul>
+<%@reads.each do |read|%>
+	<li><%=link_to read.title,article_path(read)%><br>
+		<%=raw read.content%>
+	</li>
+	<hr>
+<%end%>
+</ul>

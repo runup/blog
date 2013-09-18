@@ -1,0 +1,8 @@
+<ul>
+<%@pms.each do |pm|%>
+	<li><%=link_to pm.title,article_path(pm)%><br>
+		<%=raw pm.content%>
+	</li>
+	<hr>
+<%end%>
+</ul>

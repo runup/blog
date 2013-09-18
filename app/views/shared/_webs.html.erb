@@ -1,0 +1,10 @@
+
+
+<ul>
+<%@webs.each do |web|%>
+	<li><%=link_to web.title,article_path(web)%><br>
+		<%=raw web.content%>
+	</li>
+	<hr>
+<%end%>
+</ul>
